@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 50px;
+    border-bottom:1px solid #222;
+}
+
+.logo{
+    font-size:3rem;
+    font-weight:bold;
+    color:#ff4d00;
+    letter-spacing:3px;
+}
+
+.search-box input{
+    width:350px;
+    padding:14px 18px;
+    background:#111;
+    color:#fff;
+    border:1px solid #333;
+    border-radius:12px;
+    font-size:16px;
+}
+
+.container{
+    padding:40px;
+}
+
+.cars-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#0a0a0a;
+    border:1px solid #222;
+    border-radius:22px;
+    overflow:hidden;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 35px rgba(255,77,0,0.5);
+}
+
+.card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h2{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.price{
+    color:#ff4d00;
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .search-box input{
+        width:100%;
+    }
+
+    .logo{
+        font-size:2.3rem;
+    }
+}

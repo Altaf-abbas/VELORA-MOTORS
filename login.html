@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Login to your Velora Automotive account.">
+
+    <title>Login | VELORA Automotive</title>
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- Login CSS -->
+
+    <link rel="stylesheet"
+          href="login.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= LOGIN PAGE ================= -->
+
+    <main class="login-page">
+
+
+        <!-- LEFT SIDE -->
+
+        <section class="login-visual">
+
+            <div class="visual-overlay"></div>
+
+
+            <div class="visual-content">
+
+                <a href="index.html"
+                   class="brand">
+
+                    <span class="brand-symbol">
+                        V
+                    </span>
+
+                    <span class="brand-name">
+                        VELORA
+                    </span>
+
+                </a>
+
+
+                <div class="visual-text">
+
+                    <p class="small-title">
+                        PREMIUM AUTOMOTIVE
+                    </p>
+
+                    <h1>
+                        DRIVE BEYOND
+                        <span>ORDINARY.</span>
+                    </h1>
+
+                    <p>
+                        Your journey begins here.
+                        Access your Velora account
+                        and discover extraordinary cars.
+                    </p>
+
+                </div>
+
+
+                <div class="visual-footer">
+
+                    <span>
+                        © 2026 VELORA
+                    </span>
+
+                    <span>
+                        DRIVE BEYOND ORDINARY.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT SIDE -->
+
+        <section class="login-section">
+
+
+            <!-- Back Home -->
+
+            <a href="index.html"
+               class="back-home">
+
+                ← Back to Home
+
+            </a>
+
+
+            <div class="login-container">
+
+
+                <!-- Heading -->
+
+                <div class="login-header">
+
+                    <p class="section-label">
+                        WELCOME BACK
+                    </p>
+
+                    <h2>
+                        Sign in to
+                        <span>Velora</span>
+                    </h2>
+
+                    <p>
+                        Enter your details to access
+                        your account.
+                    </p>
+
+                </div>
+
+
+                <!-- Login Form -->
+
+                <form id="loginForm"
+                      class="login-form">
+
+
+                    <!-- Email -->
+
+                    <div class="input-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required>
+
+                        <small
+                            class="error-message"
+                            id="emailError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- Password -->
+
+                    <div class="input-group">
+
+                        <div class="label-row">
+
+                            <label for="password">
+                                Password
+                            </label>
+
+                            <a href="forgot-password.html"
+                               class="forgot-link">
+
+                                Forgot Password?
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required>
+
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                class="password-toggle"
+                                aria-label="Show password">
+
+                                Show
+
+                            </button>
+
+                        </div>
+
+
+                        <small
+                            class="error-message"
+                            id="passwordError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- Remember Me -->
+
+                    <div class="form-options">
+
+                        <label class="remember">
+
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                                name="rememberMe">
+
+                            <span class="checkmark"></span>
+
+                            <span>
+                                Remember me
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Login Button -->
+
+                    <button
+                        type="submit"
+                        class="login-submit"
+                        id="loginButton">
+
+                        <span>
+                            Sign In
+                        </span>
+
+                        <span class="button-arrow">
+                            →
+                        </span>
+
+                    </button>
+
+
+                    <!-- Status Message -->
+
+                    <div
+                        id="loginMessage"
+                        class="login-message">
+                    </div>
+
+
+                </form>
+
+
+                <!-- Divider -->
+
+                <div class="divider">
+
+                    <span>
+                        OR
+                    </span>
+
+                </div>
+
+
+                <!-- Social Login -->
+
+                <div class="social-login">
+
+                    <button
+                        type="button"
+                        class="social-btn"
+                        id="googleLogin">
+
+                        <span class="social-icon">
+                            G
+                        </span>
+
+                        Continue with Google
+
+                    </button>
+
+                </div>
+
+
+                <!-- Signup -->
+
+                <div class="signup-text">
+
+                    Don't have an account?
+
+                    <a href="signup.html">
+                        Create Account
+                    </a>
+
+                </div>
+
+
+                <!-- Terms -->
+
+                <p class="terms">
+
+                    By continuing, you agree to our
+
+                    <a href="terms.html">
+                        Terms & Conditions
+                    </a>
+
+                    and
+
+                    <a href="privacy.html">
+                        Privacy Policy
+                    </a>.
+
+                </p>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Login JavaScript -->
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>
+```

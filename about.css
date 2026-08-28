@@ -1,0 +1,913 @@
+/* =========================================================
+   VELORA ABOUT PAGE
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #070707;
+    --dark: #0d0d0d;
+    --dark-2: #121212;
+    --gold: #d4af37;
+    --gold-light: #f0d477;
+    --white: #ffffff;
+    --gray: #999999;
+    --border: #242424;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: var(--black);
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.about-hero {
+    min-height: 560px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, .94),
+            rgba(0, 0, 0, .45)
+        ),
+        url("../images/about-hero.jpg")
+        center / cover no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            0deg,
+            var(--black),
+            transparent 55%
+        );
+}
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 90%;
+
+    max-width: 1250px;
+
+    margin: auto;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.hero-logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 75px;
+}
+
+.hero-logo span {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--gold);
+
+    border-radius: 50%;
+
+    color: var(--gold);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 23px;
+}
+
+.hero-logo strong {
+    color: var(--gold);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    letter-spacing: 5px;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.section-label {
+    color: var(--gold);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   HERO TITLE
+========================= */
+
+.hero-content h1 {
+    margin-top: 18px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(60px, 8vw, 105px);
+
+    line-height: .95;
+
+    font-weight: 600;
+}
+
+.hero-content h1 span {
+    color: var(--gold);
+}
+
+.hero-description {
+    max-width: 520px;
+
+    margin-top: 28px;
+
+    color: #aaa;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.about-intro {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 120px 0;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 100px;
+}
+
+.intro-left h2 {
+    margin-top: 18px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(38px, 5vw, 60px);
+
+    line-height: 1.1;
+
+    font-weight: 500;
+}
+
+.intro-left h2 span {
+    color: var(--gold);
+}
+
+.intro-right {
+    padding-top: 10px;
+}
+
+.intro-right p {
+    margin-bottom: 25px;
+
+    color: #999;
+
+    font-size: 13px;
+
+    line-height: 2;
+}
+
+.intro-right p:first-child {
+    color: var(--white);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 22px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats-section {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    border-top: 1px solid var(--border);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.stat-box {
+    min-height: 210px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    border-right: 1px solid var(--border);
+
+    text-align: center;
+}
+
+.stat-box:last-child {
+    border-right: none;
+}
+
+.stat-number {
+    color: var(--white);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 55px;
+}
+
+.stat-plus {
+    color: var(--gold);
+
+    font-size: 25px;
+
+    margin-left: 5px;
+}
+
+.stat-box p {
+    margin-top: 8px;
+
+    color: #666;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   MISSION
+========================= */
+
+.mission-section {
+    min-height: 650px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+}
+
+.mission-image {
+    position: relative;
+
+    min-height: 600px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .5)
+        ),
+        url("../images/about-car.jpg")
+        center / cover no-repeat;
+}
+
+.image-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent 70%,
+            var(--black)
+        );
+}
+
+.image-label {
+    position: absolute;
+
+    bottom: 30px;
+
+    left: 35px;
+
+    color: var(--gold);
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+}
+
+.mission-content {
+    display: flex;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    padding: 80px;
+}
+
+.mission-content h2 {
+    max-width: 480px;
+
+    margin: 18px 0 25px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(40px, 5vw, 65px);
+
+    line-height: 1.05;
+}
+
+.mission-content h2 span {
+    color: var(--gold);
+}
+
+.mission-content > p {
+    max-width: 500px;
+
+    margin-bottom: 20px;
+
+    color: #999;
+
+    font-size: 12px;
+
+    line-height: 1.9;
+}
+
+.mission-line {
+    width: 70px;
+
+    height: 1px;
+
+    margin: 20px 0;
+
+    background: var(--gold);
+}
+
+.mission-content strong {
+    color: var(--gold-light);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   VALUES
+========================= */
+
+.values-section {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 120px 0;
+}
+
+.section-heading {
+    margin-bottom: 55px;
+}
+
+.section-heading h2 {
+    margin-top: 15px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(40px, 5vw, 62px);
+}
+
+.section-heading h2 span {
+    color: var(--gold);
+}
+
+.values-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+.value-card {
+    position: relative;
+
+    min-height: 300px;
+
+    padding: 35px 25px;
+
+    border: 1px solid var(--border);
+
+    background: var(--dark);
+
+    transition: .3s ease;
+}
+
+.value-card:hover {
+    border-color: var(--gold);
+
+    transform: translateY(-8px);
+}
+
+.value-number {
+    color: #444;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+}
+
+.value-icon {
+    margin-top: 45px;
+
+    color: var(--gold);
+
+    font-size: 27px;
+}
+
+.value-card h3 {
+    margin-top: 18px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    font-weight: 500;
+}
+
+.value-card p {
+    margin-top: 12px;
+
+    color: #777;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience-section {
+    min-height: 600px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, .85),
+            rgba(0, 0, 0, .9)
+        ),
+        url("../images/experience-car.jpg")
+        center / cover no-repeat;
+}
+
+.experience-content {
+    max-width: 700px;
+
+    padding: 50px 20px;
+}
+
+.experience-content h2 {
+    margin-top: 18px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(45px, 6vw, 75px);
+}
+
+.experience-content h2 span {
+    color: var(--gold);
+}
+
+.experience-content p:not(.section-label) {
+    max-width: 550px;
+
+    margin: 20px auto 0;
+
+    color: #999;
+
+    font-size: 12px;
+
+    line-height: 1.9;
+}
+
+.experience-content .primary-btn {
+    margin-top: 30px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.primary-btn {
+    min-width: 185px;
+
+    height: 50px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    padding: 0 25px;
+
+    border: 1px solid var(--gold);
+
+    background: var(--gold);
+
+    color: var(--black);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    transition: .3s ease;
+}
+
+.primary-btn:hover {
+    background: transparent;
+
+    color: var(--gold);
+}
+
+.primary-btn span {
+    font-size: 18px;
+
+    transition: .3s ease;
+}
+
+.primary-btn:hover span {
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.about-cta {
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #19150a,
+            #070707 65%
+        );
+}
+
+.cta-content h2 {
+    margin-top: 18px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(45px, 6vw, 75px);
+
+    line-height: 1.05;
+}
+
+.cta-content h2 span {
+    color: var(--gold);
+}
+
+.cta-content > p:not(.section-label) {
+    margin: 20px 0 30px;
+
+    color: #888;
+
+    font-size: 12px;
+}
+
+.cta-buttons {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+}
+
+.secondary-btn {
+    min-width: 150px;
+
+    height: 50px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #333;
+
+    color: #aaa;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    transition: .3s ease;
+}
+
+.secondary-btn:hover {
+    border-color: var(--gold);
+
+    color: var(--gold);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    padding: 55px 20px 30px;
+
+    border-top: 1px solid var(--border);
+
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.footer-logo span {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--gold);
+
+    border-radius: 50%;
+
+    color: var(--gold);
+
+    font-family: "Playfair Display", serif;
+}
+
+.footer-logo strong {
+    color: var(--gold);
+
+    font-family: "Playfair Display", serif;
+
+    letter-spacing: 4px;
+}
+
+.footer > p {
+    margin-top: 12px;
+
+    color: #666;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 14px;
+}
+
+.footer-line {
+    width: 50px;
+
+    height: 1px;
+
+    margin: 30px auto;
+
+    background: var(--gold);
+}
+
+.footer small {
+    color: #444;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .about-intro {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding: 85px 0;
+    }
+
+    .stats-section {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .stat-box:nth-child(2) {
+        border-right: none;
+    }
+
+    .stat-box:nth-child(1),
+    .stat-box:nth-child(2) {
+        border-bottom: 1px solid var(--border);
+    }
+
+    .mission-section {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-image {
+        min-height: 450px;
+    }
+
+    .mission-content {
+        padding: 80px 7%;
+    }
+
+    .values-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .about-hero {
+        min-height: 470px;
+    }
+
+    .hero-content {
+        width: 88%;
+    }
+
+    .hero-logo {
+        margin-bottom: 55px;
+    }
+
+    .hero-logo strong {
+        font-size: 20px;
+
+        letter-spacing: 3px;
+    }
+
+    .hero-content h1 {
+        font-size: 58px;
+    }
+
+    .hero-description {
+        font-size: 11px;
+    }
+
+    .about-intro {
+        width: 88%;
+    }
+
+    .stats-section {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-box {
+        border-right: none;
+
+        border-bottom: 1px solid var(--border);
+    }
+
+    .stat-box:last-child {
+        border-bottom: none;
+    }
+
+    .mission-content {
+        padding: 65px 7%;
+    }
+
+    .values-section {
+        width: 88%;
+
+        padding: 85px 0;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .value-card {
+        min-height: 250px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 190px;
+    }
+
+}

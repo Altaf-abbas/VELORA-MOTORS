@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Create your Velora Automotive account.">
+
+    <title>Sign Up | VELORA Automotive</title>
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- Signup CSS -->
+
+    <link rel="stylesheet"
+          href="signup.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= SIGNUP PAGE ================= -->
+
+    <main class="signup-page">
+
+
+        <!-- ================= LEFT VISUAL ================= -->
+
+        <section class="signup-visual">
+
+            <div class="visual-overlay"></div>
+
+
+            <div class="visual-content">
+
+
+                <!-- Logo -->
+
+                <a href="index.html"
+                   class="brand">
+
+                    <span class="brand-symbol">
+                        V
+                    </span>
+
+                    <span class="brand-name">
+                        VELORA
+                    </span>
+
+                </a>
+
+
+                <!-- Main Text -->
+
+                <div class="visual-text">
+
+                    <p class="small-title">
+                        WELCOME TO VELORA
+                    </p>
+
+                    <h1>
+                        YOUR JOURNEY
+                        <span>STARTS HERE.</span>
+                    </h1>
+
+                    <p>
+                        Create your account and discover
+                        a world of premium automobiles,
+                        performance and luxury.
+                    </p>
+
+                </div>
+
+
+                <!-- Footer -->
+
+                <div class="visual-footer">
+
+                    <span>
+                        © 2026 VELORA
+                    </span>
+
+                    <span>
+                        DRIVE BEYOND ORDINARY.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RIGHT SIGNUP ================= -->
+
+        <section class="signup-section">
+
+
+            <!-- Back Home -->
+
+            <a href="index.html"
+               class="back-home">
+
+                ← Back to Home
+
+            </a>
+
+
+            <div class="signup-container">
+
+
+                <!-- Header -->
+
+                <div class="signup-header">
+
+                    <p class="section-label">
+                        CREATE ACCOUNT
+                    </p>
+
+                    <h2>
+                        Join
+                        <span>Velora</span>
+                    </h2>
+
+                    <p>
+                        Create your account to continue.
+                    </p>
+
+                </div>
+
+
+                <!-- Signup Form -->
+
+                <form id="signupForm"
+                      class="signup-form">
+
+
+                    <!-- Full Name -->
+
+                    <div class="input-group">
+
+                        <label for="fullName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required>
+
+                        <small
+                            class="error-message"
+                            id="nameError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- Email -->
+
+                    <div class="input-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required>
+
+                        <small
+                            class="error-message"
+                            id="emailError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- Password -->
+
+                    <div class="input-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Create a password"
+                                autocomplete="new-password"
+                                required>
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                class="password-toggle">
+
+                                Show
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- Password Strength -->
+
+                        <div class="password-strength">
+
+                            <div class="strength-bar">
+
+                                <span
+                                    id="strengthBar">
+                                </span>
+
+                            </div>
+
+                            <small id="strengthText">
+                                Use 8 or more characters
+                            </small>
+
+                        </div>
+
+
+                        <small
+                            class="error-message"
+                            id="passwordError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- Confirm Password -->
+
+                    <div class="input-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="Confirm your password"
+                                autocomplete="new-password"
+                                required>
+
+                            <button
+                                type="button"
+                                id="toggleConfirmPassword"
+                                class="password-toggle">
+
+                                Show
+
+                            </button>
+
+                        </div>
+
+
+                        <small
+                            class="error-message"
+                            id="confirmPasswordError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- Terms -->
+
+                    <div class="terms-check">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="terms"
+                                name="terms"
+                                required>
+
+                            <span>
+                                I agree to the
+                                <a href="terms.html">
+                                    Terms & Conditions
+                                </a>
+                                and
+                                <a href="privacy.html">
+                                    Privacy Policy
+                                </a>.
+                            </span>
+
+                        </label>
+
+                        <small
+                            class="error-message"
+                            id="termsError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- Signup Button -->
+
+                    <button
+                        type="submit"
+                        class="signup-submit"
+                        id="signupButton">
+
+                        <span>
+                            Create Account
+                        </span>
+
+                        <span class="button-arrow">
+                            →
+                        </span>
+
+                    </button>
+
+
+                    <!-- Message -->
+
+                    <div
+                        id="signupMessage"
+                        class="signup-message">
+                    </div>
+
+                </form>
+
+
+                <!-- Divider -->
+
+                <div class="divider">
+
+                    <span>
+                        OR
+                    </span>
+
+                </div>
+
+
+                <!-- Google -->
+
+                <button
+                    type="button"
+                    class="social-btn"
+                    id="googleSignup">
+
+                    <span class="social-icon">
+                        G
+                    </span>
+
+                    Continue with Google
+
+                </button>
+
+
+                <!-- Login -->
+
+                <div class="login-text">
+
+                    Already have an account?
+
+                    <a href="login.html">
+                        Sign In
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Signup JavaScript -->
+
+    <script src="signup.js"></script>
+
+</body>
+
+</html>
+```

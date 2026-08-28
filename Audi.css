@@ -1,0 +1,88 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+}
+
+header{
+padding:25px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #222;
+}
+
+h1{
+font-size:35px;
+letter-spacing:3px;
+color:#f7c948;
+}
+
+#searchInput{
+width:350px;
+padding:12px;
+background:#111;
+border:1px solid #333;
+color:white;
+border-radius:8px;
+}
+
+.cars-container{
+padding:40px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:#0f0f0f;
+border-radius:20px;
+overflow:hidden;
+transition:.4s;
+border:1px solid #222;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 25px rgba(247,201,72,.25);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.info{
+padding:20px;
+}
+
+.info h2{
+margin-bottom:10px;
+font-size:28px;
+}
+
+.info p{
+font-size:24px;
+font-weight:600;
+color:#f7c948;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:20px;
+}
+
+#searchInput{
+width:100%;
+}
+
+}
